@@ -1,14 +1,10 @@
 var templateUSR = `<div class="row rowuser">
                         <div class="col-md-6 comborda">
-                            <h3> **NOME** </h3>
-                            Racf: **RACF** <br>
-                            Email: **EMAIL** <br>
+                            <h3> **ID** </h3>
                         </div>
                         
-                        <div class="col-mf-4 comborda">
-                            <h4>**NOMEDEPTO**</h4>
-                            Unidade: **UNIDADE** <br>
-                            Andar: **ANDAR**
+                        <div class="col-md-6 comborda">
+                            <h4>**NOME**</h4>
                         </div>
                     </div>`;
 
@@ -25,8 +21,8 @@ function preenche(resJson){
     for(i=0; i<resJson.length; i++){
         var user = resJson[i];
 
-        var novaLinha = templateUSR.replace("**NOME**",user.id_agente)
-                                    .replace("**LINKFOTO**",user.nome_agente);
+        var novaLinha = templateUSR.replace("**ID**",user.id_agente)
+                                    .replace("**NOME**",user.nome_agente);
                                             
         contSTR = contSTR + novaLinha;
     }
