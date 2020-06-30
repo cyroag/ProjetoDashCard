@@ -5,7 +5,7 @@ var templateUSR = `<div class="row rowuser">
                         
                         <div class="col-md-6 comborda">
                             <h4>**NOME**</h4>
-                        </div>
+                        </div> 
                     </div>`;
 
 function carregaParceiros(){
